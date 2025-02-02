@@ -1,0 +1,39 @@
+.socials_{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    top: 150px;
+    p{
+        max-width: 80%;
+    }
+    .imagenes{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        top: 50px;
+        width: 80%;
+        padding: 40px;
+        gap: 50px;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        img{
+            left: 0;
+            min-width: 96px;
+        }
+    }
+    a:hover{
+        color: blue;
+    }
+}

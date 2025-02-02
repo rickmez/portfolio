@@ -1,0 +1,354 @@
+
+/* *{border: 2px solid red;} */
+
+.alert{
+    position: sticky !important;
+    z-index: 10 !important;
+    top: 100px
+
+}
+
+.tip{
+    position: relative;
+    left: 20px;
+}
+
+.contentWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    flex-direction: column;
+    position: relative;
+    height: 130vh;
+    h2{
+        position: relative;
+        top: 150px;
+    }
+}
+
+.cardHolder{
+    width: 90%;
+    position: relative;
+    top: 200px;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.contactcardTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        position: relative;
+        left: -30px;
+        max-width: 36px;
+    }
+    h3{
+        position: relative;
+        left: -10px;
+    }
+}
+
+
+.contactcard{
+    background-color: white;
+    min-height: 900px;
+    width: 500px;
+    color: #000;
+    border-radius: 24px;
+}
+
+@media(max-width:550px){
+    .contactcard{max-width: 90%;}
+}
+
+.contactcard:nth-child(1){
+    h3{color: 	#25d366;}
+}
+
+.contactcard:nth-child(2){
+    h3:nth-child(2){
+        color: 	#4285F4;
+    }
+    h3:nth-child(3){
+        color: 	#EA4335;
+    }
+    h3:nth-child(4){
+        color: 	#FBBC04;
+    }
+    h3:nth-child(5){
+        color: 	#34A853;
+    }
+}
+
+.contactcardContent{
+    height: 500px;
+    width: 90%;
+    p{
+        position: relative;
+        left: 25px;
+    }
+    /* border: #4285F4 10px  solid; */
+}
+
+.leavemsg{
+    display: flex;
+    /* float: left; */
+    gap: 10px;
+    justify-content: center;
+    align-items: right;
+    justify-items:flex-start;
+    text-align: justify;
+}
+
+.leavemsg img{
+    position: relative;
+    top: 10px;
+    max-width: 16px;
+    max-height: 16px;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    right: 20px;
+}
+
+.leavemsg img:hover{
+    opacity: 0.3;
+}
+
+
+
+.form_{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    min-height: 300px;
+    gap: 15px;
+    position: relative;
+    left: -50px;
+}
+
+.custommsg{
+    top: 20px;
+    position: relative;
+    height: 100px;
+    text-align: start;
+}
+
+button{
+    margin: 15px;
+    color: black;
+    background-color: white;
+    box-shadow: 0.5vmin 0.5vmin #000;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+}
+
+.name_{
+    border: #a5a5a5 2px solid;
+    background-color: #dddddd;
+    border-radius: 5px;
+    left:  15px;
+}
+
+form{
+    .formField{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        left:  65px;
+        margin: 20px;
+    }
+    input{
+        border: #a5a5a5 2px solid;
+        background-color: #dddddd;
+        border-radius: 5px;
+        color: #000;
+    }
+    
+    .formName{left: 40px;}
+    .formEmail{left: 44px;}
+    .formMsg{left: 11px;}
+
+    .submit_{
+        margin: 15px;
+        color: black;
+        background-color: white;
+        box-shadow: 0.5vmin 0.5vmin #000;
+        border-color: black;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 5px;
+        width: 100px;
+        height: 35px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: medium;
+    }
+    .submit_:hover{
+        opacity: 0.6;
+    }
+}
+
+
+.empresa_{
+    left: 17px;
+    border: #a5a5a5 2px solid;
+    background-color: #dddddd;
+    border-radius: 5px;
+}
+
+.alert button{
+    box-shadow: none !important;
+    background-color: rgba(0, 0, 0 ,0);
+}
+
+.alert button:hover{
+    background-color: rgba(0, 0, 0 ,0);
+}
+
+.field_1{
+    position: relative;
+    display: flex;
+    gap: 91px;
+    margin-top: 6px;
+    top: 13px;
+    width: 100%;
+    justify-content: start;
+    img{
+        left: 0px;
+    }
+    label{
+        position: relative;
+        left: 67px;
+    }
+    input{
+        left: 0px;
+        border: #a5a5a5 2px solid;
+        background-color: #dddddd;
+        border-radius: 5px;
+        max-width: 208px;
+    }
+}
+
+button:hover{
+    opacity: 0.6;
+}
+
+button:active{
+    background-color: blueviolet;
+}
+
+input{
+    position: relative;
+    left: 20px;
+    border-style: none;
+    background-color: white;
+    color: black;
+    width: 250px;
+    height: 22px;
+}
+
+.email_input{
+    left: 42px;
+    border: #a5a5a5 2px solid;
+    background-color: #dddddd;
+    border-radius: 5px;
+}
+
+textarea{
+    position: relative;
+    border: #a5a5a5 2px solid;
+    background-color: #dddddd;
+    margin: 5px;
+    left: 15px;
+    border-radius: 5px;
+    width: 248px;
+    color: black;
+}
+
+input{
+    border-style: none;
+}
+
+.field{
+    position: relative;
+    display: flex;
+    width: 100%;
+    top: 20px;
+    left: 68px;
+    /* right: 104px; */
+}
+
+input::file-selector-button{
+    border-style: none;
+    border: none;
+    height: 100%;
+
+}
+
+input::file-selector-button:hover{
+    opacity: 0.6;
+}
+
+.field_check{
+    position: relative;
+    top: 5px;
+    left: -12px !important;
+    font-size: medium;
+}
+
+.whatsappContact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    img{
+        min-width: 160px;
+        left: 0;
+    }
+}
+
+.whatsappBot{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+form{
+    position: relative;
+    left: -65px;
+}
+
+@media (max-width:500px) {
+    .contentWrap{
+        flex-direction: column;
+        width: 100%;
+    }
+    .cardHolder{
+        max-width: 100%;
+    }
+    .contactcard{
+        max-width: 95%;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .contentWrap{
+        background-color: rgba(159, 189, 189, 0.9);
+    }
+  }

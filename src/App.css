@@ -1,0 +1,225 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  width: auto;
+  width: 100%;
+  height: 100%;
+  background-color: #171614/*#2E2C2F*/;
+  text-align: center;
+  display: grid;  
+}
+.particles-js-canvas-el{
+  position: fixed;
+  z-index: -100;
+}
+
+/* .circle{
+  position: relative;
+  margin: 0px;
+  top: 5px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  background: url('/Headshot.png');
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+h3{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.FirstContainer{
+  position: relative;
+  height: 350px;
+  width: 100%;
+  background-color: rgba(80, 158, 182, 0.55) ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  text-align: justify;
+  
+}
+
+.cards {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  
+  margin: 0;
+  padding: 0;
+  
+  left: 10px;
+
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  text-align: justify;
+
+}
+
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+
+}
+
+.card img {
+  height: auto;
+  min-width: 48px;
+  vertical-align: middle;
+  padding: 1px;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 80%;
+  }
+  .card img {
+    position: relative;
+    height: auto;
+    min-width: 64px;
+    vertical-align: middle;
+    padding: 5px;
+    top: 5px;
+    margin: 5px;
+  }
+  .cards{
+    height: 450px;
+  }
+  .card{
+    padding: 25px;
+    min-height: 200px;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+  .card{
+    padding: 25px;
+  }
+} */
+
+/* .card {
+  background-color: white;
+  border-radius: 1em;
+  box-shadow: 1vmin 1vmin #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #fff;
+  height: 150px;
+  padding: 5px;
+  background: linear-gradient(to bottom left, #2b60a0 40%, #8f50e2 100%);
+
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  text-align: justify;
+} */
+
+/* .card_content {
+  padding: px;
+  height: 200px;
+  text-align: center;
+} */
+
+/* .card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+} */
+
+/* .card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+} */
+
+
+
+/* .secondContainer{
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+  min-height: 500px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  text-align: justify;
+} */
+
+
+/* .card img{
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s;
+  -webkit-animation-name: grow;
+  
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: grow;
+  -moz-animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  
+  transition-property: -moz-transform;
+  transition-duration: 1s;
+  animation-name: grow;
+  animation-duration: 2.75s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+} */
+
+@keyframes grow {
+  from {
+      transform:scale(1);
+  }
+  50%{
+      transform:scale(1.2);
+  }
+  to{
+    transform:scale(1);
+    
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .FirstContainer{
+    color: #ffffff;
+    background-color: rgba(88, 216, 255, 0.55) ;
+  }
+  .circle{
+    background-color: rgba(255, 179, 0, 0.8);
+  }
+  body{
+    background-color: #CDCDCD;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+
+}
+
+/* <a href="https://www.flaticon.es/iconos-gratis/info" title="info iconos">Info iconos creados por Digby Garrett - Flaticon</a> */

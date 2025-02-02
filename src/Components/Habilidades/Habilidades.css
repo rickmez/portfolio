@@ -1,0 +1,338 @@
+/* *{border: 1px solid red;} */
+
+.page_container{
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    top: 100px;
+    height: 100vh;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: justify;
+    z-index: 0;
+
+}
+
+.order{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button{
+        min-width: 170px;
+    }
+}
+
+.cardcontainer{
+    margin: 0;
+    padding: 0;
+    /* width: 100; */
+    height: 100%;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card{
+    position: relative;
+    padding: 0;
+    border-radius: 7px;
+    min-width: 310px;
+    min-height: 350px;
+    max-width: 310px;
+    max-height: 350px;
+    background-color: rgb(255, 255, 255);
+    animation: dom 300ms ease 500ms backwards;
+    .Cardimage{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 65%;
+        border-radius: 7px 7px  0px 0px;
+        /* background-color: rgb(50, 194, 216); */
+        img{
+            /* min-width: 100%; */
+            height: 100%;
+            object-fit: contain;
+            border-radius: 16px 16px  0px 0px;
+            left: 0px;
+        }
+    }
+    .Cardcontent{
+        position: relative;
+        width: 100%;
+        color: rgb(21, 21, 21);
+        height: 35% ;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: center;
+        gap: 20px;
+        .Cardtitle{
+            width: 100%;
+            position: relative;
+            top: 15px;
+            left: -4px;
+            max-height: 10px;
+            margin-bottom: auto;
+        }
+        img{
+            position: relative;
+            max-width: 36px ;
+            max-height: 36px ;
+            /* left: 5px; */
+            top: 0px;
+        }
+        h3{
+            position: relative;
+            font-size: 17px;
+            left: 5px;
+        }
+        .description{
+            font-size: 12px;
+            width: 100%;
+            .Uni{
+                top: -10px
+            }
+            p{
+                position: relative;
+                top: -10px;
+                left: 56px;
+            }
+            b{
+                padding: 2px;
+                position: relative;
+                left: 53px;
+                top: -15px;
+                background-color: rgb(65, 179, 255);
+                color: white;
+                border-radius: 3px;
+            }
+        }
+    }
+    
+}
+
+.dom {animation: dom 1s ease 200ms backwards;}
+@keyframes dom {
+    from {opacity: 0;}
+    to {opacity: 1}
+}
+
+.card:nth-child(1){
+    .Cardimage{
+        height: 180px;
+        aws{
+            position: relative;
+            object-fit: cover;
+            z-index: 2;
+        }
+        img{
+            min-width: 128px
+        }
+    }
+}
+
+.card:nth-child(2){
+    animation-delay: 800ms;
+    .Cardimage{
+        height: 180px;
+        aws{
+            position: relative;
+            object-fit: cover;
+            width: 35px;
+            z-index: 2;
+        }
+        img{min-width: 256px;}
+    }
+    .Cardtitle{
+        img{
+            max-width: 26px !important;
+        }
+        h3{
+            left: 14px !important;
+        }
+    }
+}
+
+.card:nth-child(3){
+    animation-delay: 1000ms;
+    .Cardimage{
+        max-width: 100%;
+        height: 180px;
+        /* border: solid 1px red; */
+        img{
+            min-width: 128px !important;
+            left: 10px;
+        }
+    }
+}
+
+.card:nth-child(4){
+    animation-delay: 1200ms;
+    .Cardimage{
+        max-width: 100%;
+        height: 180px;
+        /* border: solid 1px red; */
+        img{
+            min-width: 150px !important;
+            left: 10px;
+        }
+    }
+}
+
+.card:nth-child(5){
+    animation-delay: 1400ms;
+    .Cardimage{
+        /* min-height: 40% !important; */
+        /* border: solid 1px red; */
+        img{
+            min-height: 190px;
+            max-height: 190px;
+            min-width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.card:nth-child(6){
+    animation-delay: 1600ms;
+    .Cardimage{
+        /* min-height: 40% !important; */
+        /* border: solid 1px red; */
+        img{
+            min-height: 190px;
+            max-height: 190px;
+            min-width: 100%;
+            object-fit: contain;
+        }
+    }
+    .Cardtitle{
+        img{
+            max-width: 32px !important;
+        }
+        h3{
+            left: 7px !important;
+        }
+    }
+}
+
+.card:nth-child(7){
+    animation-delay: 1800ms;
+    .Cardimage{
+        /* min-height: 40% !important; */
+        /* border: solid 1px red; */
+        img{
+            min-height: 190px;
+            max-height: 190px;
+            min-width: 100%;
+            object-fit: contain;
+        }
+    }
+    .Cardtitle{
+        img{
+            max-width: 32px !important;
+        }
+        h3{
+            left: 8px !important;
+        }
+    }
+}
+
+@media (max-width:1050px){
+    h3{
+        left: 12px !important;
+    }
+    .page_container{
+        height: 160vh;
+    }
+
+    .card:nth-child(2){
+        .Cardimage{
+            height: 180px;
+            aws{
+                position: relative;
+                object-fit: cover;
+                width: 35px;
+                z-index: 2;
+            }
+            img{min-width: 256px;}
+        }
+        .Cardtitle{
+            img{
+                max-width: 26px !important;
+            }
+            h3{
+                left: 24px !important;
+            }
+        }
+    }
+
+    .card:nth-child(6){
+        .Cardimage{
+            /* min-height: 40% !important; */
+            /* border: solid 1px red; */
+            img{
+                min-height: 190px;
+                max-height: 190px;
+                min-width: 100%;
+                object-fit: contain;
+            }
+        }
+        .Cardtitle{
+            img{
+                max-width: 32px !important;
+            }
+            h3{
+                left: 16px !important;
+            }
+        }
+    }
+
+    .card:nth-child(7){
+        .Cardimage{
+            /* min-height: 40% !important; */
+            /* border: solid 1px red; */
+            img{
+                min-height: 190px;
+                max-height: 190px;
+                min-width: 100%;
+                object-fit: contain;
+            }
+        }
+        .Cardtitle{
+            img{
+                max-width: 32px !important;
+            }
+            h3{
+                left: 18px !important;
+            }
+        }
+    }
+
+}
+
+
+/* <a href="https://www.flaticon.es/iconos-gratis/senal" title="señal iconos">Señal iconos creados por Vitaly Gorbachev - Flaticon</a> */
+/* <a href="https://www.flaticon.es/iconos-gratis/circuito-neuronal" title="circuito neuronal iconos">Circuito neuronal iconos creados por Uniconlabs - Flaticon</a> */
+/* <a href="https://www.flaticon.es/iconos-gratis/algoritmo" title="algoritmo iconos">Algoritmo iconos creados por Becris - Flaticon</a> */
+/* <a href="https://www.flaticon.es/iconos-gratis/logo" title="logo iconos">Logo iconos creados por Dave Gandy - Flaticon</a> */
+/* <a href="https://www.flaticon.es/iconos-gratis/programa" title="programa iconos">Programa iconos creados por srip - Flaticon</a> */
+/* <a href="https://www.flaticon.com/free-icons/api" title="api icons">Api icons created by Freepik - Flaticon</a> */
+/* <a href="https://www.flaticon.com/free-icons/image-processing" title="image processing icons">Image processing icons created by pojok d - Flaticon</a> */
+/* <a href="https://www.flaticon.com/free-icons/iot" title="iot icons">Iot icons created by Freepik - Flaticon</a> */

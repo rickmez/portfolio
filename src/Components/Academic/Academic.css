@@ -1,0 +1,475 @@
+/* *{border: red 1px solid;} */
+
+.academic_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    max-width: 100vw;
+    p{
+        position: relative;
+        top: 80px;
+        font-size: large;
+    }
+}
+
+.academictitle{
+    font-size: 50px;
+    position: relative;
+    top: 100px;
+}
+
+.holder{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.cards_{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 50px;
+    top: 100px;
+}
+
+.decor{
+    z-index: -1;
+}
+
+.section{
+    background-color: #0091AD;
+    min-width: 500px;
+    max-width: 500px;
+    height: 550px;
+    border-radius: 10px;
+    animation: dom 300ms ease 400ms backwards;
+    .title{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        height: 45px;
+        min-width: 500px;
+        border-radius:  10px 10px 0px 0px;
+        background-color: #0091AD;
+        z-index: 10;
+        h3{
+            font-size: medium;
+            font-weight: 400;
+            position: relative;
+            left: 20px;
+        }
+    }
+    img{
+        min-width: 100% ;
+        max-height: 250px;
+        left: 0px;
+        
+    }
+    .content{
+        background-color: #0091AD;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        p{
+            top:0
+        }
+        .Resumen{
+            padding: 10px;
+            width: 95%;
+            display: block;
+            font-size: large;
+            scroll-behavior: auto;
+            overflow-y: auto;
+        }
+        .Proyecto{
+            padding: 10px;
+            width: 95%;
+            font-size: large;
+            scroll-behavior: auto;
+            overflow-y: auto;
+            display: none;
+        }
+        .infodelciclo{
+            position: relative;
+            padding: 10px;
+            width: 100%;
+            display: none;
+            font-size: large;
+            ul {
+                list-style-type: none;
+                float: left;
+                text-align: left;
+                li{
+                    padding: 6px;
+                }
+            }
+        }
+        .cardContentButton{
+            padding: 7px;
+            margin: 0px;
+            width: auto;
+            border: none;
+            position: relative;
+            left: 5px;
+            border-radius: 0px;
+            box-shadow: none;
+            background-color:  #D81159; /*#FCAB10;*/
+            color: white;
+            width: auto;
+            border-radius: 5px;
+            font-size: larger;
+        }
+        .cardContentButton:hover{
+            background-color: white;
+            opacity: 1;
+            color: #081416;
+        }
+        .contentButtons{
+            padding: 7px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 15px;
+            width: 100%;
+        }
+    }
+}
+
+.dom {animation: dom 1s ease 200ms backwards;}
+@keyframes dom {
+    from {opacity: 0;}
+    to {opacity: 1}
+}
+
+.section:nth-of-type(1){
+    border: #6EFAFB solid 3px;
+    h3{font-size: 25px;}
+    img{
+        filter: contrast(1.3);
+        object-fit: cover;
+        object-position: 0% 34%;
+        border-radius:  10px 10px 0px 0px;
+    }
+}
+
+.section:nth-of-type(2){
+    border: #DC0073 solid 3px;
+    h3{font-size: 23px;}
+    animation-delay: 600ms;
+    img{
+        height: 250px;
+        object-fit: contain;
+        object-position: 0% 100%;
+    }
+}
+
+.section:nth-of-type(3){
+    border: #FE5F55 solid 3px;
+    animation-delay: 800ms;
+    h3{font-size: 21px;}
+    img{
+        object-fit: cover;
+        object-position: 0% 40%;
+        border-radius:  10px 10px 0px 0px;
+    }
+}
+.section:nth-of-type(4){
+    border: #89FC00 solid 3px;
+    animation-delay: 1000ms;
+    h3{font-size: 25px;}
+    .imgcontainer{
+        border-radius:  10px 10px 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+        max-width: 100% !important;
+        height: 250px;
+        background-color: white;
+    }
+    img{
+        max-height: 132px !important;
+        /* left: 172px; */
+        top: 20px;
+        object-fit: contain;
+    }
+}
+.section:nth-of-type(5){
+    border: #FF57BB solid 3px;
+    animation-delay: 1200ms;
+    h3{font-size: 21px;}
+    .imgcontainer{
+        border-radius:  10px 10px 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+        max-width: 100% !important;
+        height: 250px;
+        background-color: white;
+    }
+    img{
+        max-height: 132px !important;
+        /* left: 55px; */
+        top: 20px;
+        object-fit: contain;
+    }
+}
+
+.section:nth-of-type(6){
+    border: #F1D302 solid 3px;
+    animation-delay: 1400ms;
+    h3{font-size: 25px;}
+    img{
+        object-fit: cover;
+    }
+
+}
+
+.section:nth-of-type(7){
+    border: #A30015 solid 3px;
+    animation-delay: 1600ms;
+    h3{font-size: 22px;}
+    /* *{border: red 1px solid;} */
+    .content{
+        .Resumen{
+            position: relative;
+            top: 60px;
+        }
+        .Proyecto{
+            position: relative;
+            top:60px;
+        }
+        .infodelciclo{
+            position: relative;
+            top:50px;
+        }
+    }
+    .imgcontainer_{
+        position: relative;
+        top: 50px;
+        display: flex;
+        height: 150px;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        img{
+            position: relative;
+            border-radius: 50%;
+            max-width: 65px !important;
+            min-width: 65px !important;
+            max-height: 65px !important;
+            /* object-fit: contain; */
+        }
+    }
+    .contentButtons{
+        position: relative;
+        top: 50px;
+    }
+
+}
+
+.section:nth-of-type(8){
+    border: #A30015 solid 3px;
+    animation-delay: 1800ms;
+    border-radius: 10px;
+    h3{font-size: 25px;}
+    min-height: 600px;
+    .title{
+        border-radius: 10px;
+    }
+    .imgcontainer_{
+        position: relative;
+        top: 50px;
+        display: flex;
+        height: 150px;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        img{
+            position: relative;
+            /* border-radius: 50%; */
+            max-width: 65px !important;
+            min-width: 65px !important;
+            max-height: 65px !important;
+            /* object-fit: contain; */
+        }
+    }
+    .contentButtons{
+        position: relative;
+        top: 50px;
+    }
+    .content{
+        .Resumen{
+            position: relative;
+            top: 60px;
+        }
+        .Proyecto{
+            position: relative;
+            top: 60px;
+        }
+        .infodelciclo{
+            position: relative;
+            top: 60px;
+        }
+    }
+
+}
+
+
+@media (max-width: 500px) {
+    .section{
+        /* *{border: red 1px solid;} */
+        min-width: 90%;
+        max-width: 90%;
+        min-height: 650px;
+        max-height: 650px;
+        .title{
+            min-width: 90%;
+            max-width: 90%;
+        }
+        .content{
+            .cardContentButton{
+                font-size: small;
+            }
+    
+        }
+    }
+    .section:nth-of-type(1){
+        h3{font-size: 18px;}
+    }
+    .section:nth-of-type(2){
+        h3{font-size: 16px;}
+        img{
+            min-height: 300px;
+            top: -60px;
+        }
+        .contentButtons{
+            position: relative;
+            top: -60px;
+        }
+    }
+    .section:nth-of-type(3){
+        h3{font-size: 14px;}}
+    .section:nth-of-type(4){
+        h3{font-size: 20px;}}
+    .section:nth-of-type(5){
+        h3{font-size: 14px;}}
+    
+    .section:nth-of-type(7){
+        h3{font-size: 15px;}
+        .content{
+            .Resumen{
+                top: 140px;
+                font-size: medium;
+            }
+            .Proyecto{
+                position: relative;
+                top: 140px;
+            }
+            .infodelciclo{
+                position: relative;
+                top: 140px;
+            }
+        }
+        min-height: 700px;
+        .contentButtons{
+            position: relative !important;
+            top: 125px !important;
+        }
+        
+    }
+    .section:nth-of-type(8){
+        h3{font-size: 22px;}
+        .contentButtons{
+            position: relative !important;
+            top: 125px !important;
+        }
+        min-height: 700px;
+        .content{
+                .Resumen{
+                    position: relative;
+                    top: 120px;
+                }
+                .Proyecto{
+                    position: relative;
+                    top: 120px;
+                }
+                .infodelciclo{
+                    position: relative;
+                    top: 120px;
+                }
+        }
+    }
+        
+}
+
+@media (max-width: 360px) {
+    .section:nth-of-type(7){
+        .contentButtons{
+            position: relative !important;
+            top: 200px !important;
+        }
+        min-height: 800px;
+        .content{
+            .Resumen{
+                top: 200px;
+            }
+            .Proyecto{
+                position: relative;
+                top: 200px;
+            }
+            .infodelciclo{
+                position: relative;
+                top: 200px;
+            }
+        }
+    }
+    .section:nth-of-type(8){
+        .contentButtons{
+            position: relative !important;
+            top: 200px !important;
+        }
+        min-height: 800px;
+        .content{
+            .Resumen{
+                top: 200px;
+            }
+            .Proyecto{
+                position: relative;
+                top: 200px;
+            }
+            .infodelciclo{
+                position: relative;
+                top: 200px;
+            }
+        }
+    }
+}
+
+/* 449DD1 */
+/* 3943B7 */
+/* 88498F */
+/* FE5F55 */
+/* 04E762 */
+/* F5B700 */
+/* DC0073 */
+/* 008BF8 */
+/* 89FC00  */
+/* 192A51 dark blue*/
+/* 0D1F22 rich black  */
